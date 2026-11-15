@@ -1,0 +1,1496 @@
+{
+  "version": 1,
+  "weekTypes": [
+    {
+      "id": "ace_commander",
+      "name": "エースコマンダー週"
+    },
+    {
+      "id": "fighter_shooter_normal",
+      "name": "ファイター&シューター通常週"
+    }
+  ],
+  "days": [
+    {
+      "id": "mon",
+      "label": "月曜日",
+      "index": 0
+    },
+    {
+      "id": "tue",
+      "label": "火曜日",
+      "index": 1
+    },
+    {
+      "id": "wed",
+      "label": "水曜日",
+      "index": 2
+    },
+    {
+      "id": "thu",
+      "label": "木曜日",
+      "index": 3
+    },
+    {
+      "id": "fri",
+      "label": "金曜日",
+      "index": 4
+    },
+    {
+      "id": "sat",
+      "label": "土曜日",
+      "index": 5
+    },
+    {
+      "id": "sun",
+      "label": "日曜日",
+      "index": 6
+    }
+  ],
+  "lionBands": [
+    {
+      "id": "day",
+      "label": "9:00〜16:55",
+      "start": "09:00",
+      "end": "16:55"
+    },
+    {
+      "id": "evening",
+      "label": "17:00〜翌0:55",
+      "start": "17:00",
+      "end": "00:55"
+    },
+    {
+      "id": "night",
+      "label": "1:00〜8:55",
+      "start": "01:00",
+      "end": "08:55"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ace_commander_mon_1",
+      "weekType": "ace_commander",
+      "day": "mon",
+      "title": "英雄獲得",
+      "detail": "英雄募集・獲得を計画的に実施",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "英雄募集券",
+        "ダイヤ"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_mon_2",
+      "weekType": "ace_commander",
+      "day": "mon",
+      "title": "ナノウェポン作成",
+      "detail": "作成・獲得タイミングを確認",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "ナノウェポン素材"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_mon_3",
+      "weekType": "ace_commander",
+      "day": "mon",
+      "title": "蛍火の試練",
+      "detail": "開催状況を確認して参加",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_mon_4",
+      "weekType": "ace_commander",
+      "day": "mon",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_tue_5",
+      "weekType": "ace_commander",
+      "day": "tue",
+      "title": "建築・研究完成",
+      "detail": "完成タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "建築ブースト",
+        "研究ブースト"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_tue_6",
+      "weekType": "ace_commander",
+      "day": "tue",
+      "title": "蛍火の試練",
+      "detail": "開催状況を確認して参加",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_tue_7",
+      "weekType": "ace_commander",
+      "day": "tue",
+      "title": "守衛戦",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_tue_8",
+      "weekType": "ace_commander",
+      "day": "tue",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_tue_9",
+      "weekType": "ace_commander",
+      "day": "tue",
+      "title": "ギルドパーティー",
+      "detail": "参加",
+      "category": "ギルド",
+      "time": "22:30",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_wed_10",
+      "weekType": "ace_commander",
+      "day": "wed",
+      "title": "AP・スタミナ消費",
+      "detail": "残量を確認して消費",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "AP"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_wed_11",
+      "weekType": "ace_commander",
+      "day": "wed",
+      "title": "資源採集",
+      "detail": "採集を進める",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_wed_12",
+      "weekType": "ace_commander",
+      "day": "wed",
+      "title": "アース採掘",
+      "detail": "開催状況を確認",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_wed_13",
+      "weekType": "ace_commander",
+      "day": "wed",
+      "title": "蛍火の試練",
+      "detail": "開催状況を確認して参加",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_wed_14",
+      "weekType": "ace_commander",
+      "day": "wed",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_wed_15",
+      "weekType": "ace_commander",
+      "day": "wed",
+      "title": "スピーカートラップ",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_16",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "訓練ブースト",
+      "detail": "獅子奮迅の対象になる可能性。17時帯を優先、難しければ翌1時帯も検討",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "訓練ブースト"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_17",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "守衛戦",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_18",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_19",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "ギルドパーティー",
+      "detail": "参加",
+      "category": "ギルド",
+      "time": "22:30",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_20",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "刑務所クリア",
+      "detail": "17時帯の獅子被りを優先的に確認",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_21",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "器官強化ルーン獲得",
+      "detail": "17時帯の獅子被りを優先的に確認",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "器官強化ルーン"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_22",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "ギア獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "ギア"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_23",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "ギルド大乱闘／浄水戦／氷原の対決",
+      "detail": "参加するイベントの開催時刻を確認",
+      "category": "ギルド",
+      "time": "21:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_24",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "ギャザー祭り",
+      "detail": "金曜は22:00開催",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_25",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "アルティメット周回",
+      "detail": "獲得・周回タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_26",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "装備・モジュール",
+      "detail": "可能なら9時以降に獲得",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "装備材料",
+        "モジュール"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_27",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "チップ・キューブ",
+      "detail": "可能なら9時以降に獲得",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "チップ",
+        "キューブ"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_28",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "ナノウェポン素材",
+      "detail": "可能なら9時以降に獲得",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "ナノウェポン素材"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_29",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "荒野の王",
+      "detail": "巣窟・シールドを事前確認",
+      "category": "ギルド",
+      "time": "19:00",
+      "items": [
+        "巣窟物資補給",
+        "シールド"
+      ],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_30",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "攻勢作戦",
+      "detail": "開催状況を確認",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sun_31",
+      "weekType": "ace_commander",
+      "day": "sun",
+      "title": "建築・研究・訓練完成",
+      "detail": "完成タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "建築ブースト",
+        "研究ブースト",
+        "訓練ブースト"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sun_32",
+      "weekType": "ace_commander",
+      "day": "sun",
+      "title": "訓練",
+      "detail": "国バフ発動後に実行",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "訓練ブースト"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sun_33",
+      "weekType": "ace_commander",
+      "day": "sun",
+      "title": "レディエイションランド",
+      "detail": "開催時間を確認して参加",
+      "category": "ギルド",
+      "time": "20:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sun_34",
+      "weekType": "ace_commander",
+      "day": "sun",
+      "title": "デストロイヤーアタック",
+      "detail": "開催状況を確認",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sun_35",
+      "weekType": "ace_commander",
+      "day": "sun",
+      "title": "攻勢作戦",
+      "detail": "開催状況を確認",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sun_36",
+      "weekType": "ace_commander",
+      "day": "sun",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sun_37",
+      "weekType": "ace_commander",
+      "day": "sun",
+      "title": "スピーカートラップ",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_mon_38",
+      "weekType": "fighter_shooter_normal",
+      "day": "mon",
+      "title": "英雄獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "英雄募集券",
+        "ダイヤ"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_mon_39",
+      "weekType": "fighter_shooter_normal",
+      "day": "mon",
+      "title": "ギルド試練",
+      "detail": "開催状況を確認して参加",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_mon_40",
+      "weekType": "fighter_shooter_normal",
+      "day": "mon",
+      "title": "レディエイションランド",
+      "detail": "終了時刻の目安。開催状況を確認",
+      "category": "ギルド",
+      "time": "17:55",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_mon_41",
+      "weekType": "fighter_shooter_normal",
+      "day": "mon",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_tue_42",
+      "weekType": "fighter_shooter_normal",
+      "day": "tue",
+      "title": "ブースト使用",
+      "detail": "必要なブーストを計画的に使用",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "建築ブースト",
+        "研究ブースト",
+        "訓練ブースト"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_tue_43",
+      "weekType": "fighter_shooter_normal",
+      "day": "tue",
+      "title": "ギルド試練",
+      "detail": "開催状況を確認して参加",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_tue_44",
+      "weekType": "fighter_shooter_normal",
+      "day": "tue",
+      "title": "ハッピーガチャ",
+      "detail": "50回到達見込みを確認。難しい場合はスキップ可",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "ガチャ券",
+        "ダイヤ"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_tue_45",
+      "weekType": "fighter_shooter_normal",
+      "day": "tue",
+      "title": "デッドライジング",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_tue_46",
+      "weekType": "fighter_shooter_normal",
+      "day": "tue",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_47",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "装備材料",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "装備材料"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_48",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "結晶核獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "結晶核"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_49",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "収蔵品獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "収蔵品"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_50",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "ギルド試練",
+      "detail": "開催状況を確認して参加",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_51",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "ハッピーガチャ",
+      "detail": "50回到達見込みを確認。難しい場合はスキップ可",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "ガチャ券",
+        "ダイヤ"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_52",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "アルティメット周回",
+      "detail": "周回・報酬を確認",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_53",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "スピーカートラップ",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_wed_54",
+      "weekType": "fighter_shooter_normal",
+      "day": "wed",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_55",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "モジュール関連獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "モジュール"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_56",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "ミュータント軍事・内政ポイント",
+      "detail": "ポイント獲得を計画",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_57",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "アルティメット周回",
+      "detail": "周回・報酬を確認",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_58",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "異常生物獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_59",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "エナジー消費",
+      "detail": "残量を確認して消費",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "エナジー"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_60",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "デッドライジング",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_61",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_62",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "グローリー獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "グローリー"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_63",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "メカモジュール関連獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "メカモジュール"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_64",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "器官強化ルーン獲得",
+      "detail": "17時帯の獅子被りを優先的に確認",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "器官強化ルーン"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_65",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "刑務所クリア",
+      "detail": "17時帯の獅子被りを優先的に確認",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_66",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "ギルド大乱闘／浄水戦／氷原の対決",
+      "detail": "参加するイベントの開催時刻を確認",
+      "category": "ギルド",
+      "time": "21:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_67",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "ギャザー祭り",
+      "detail": "金曜は22:00開催",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sat_68",
+      "weekType": "fighter_shooter_normal",
+      "day": "sat",
+      "title": "ダイヤ使用",
+      "detail": "使用量と目的を確認",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "ダイヤ"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sat_69",
+      "weekType": "fighter_shooter_normal",
+      "day": "sat",
+      "title": "攻勢作戦",
+      "detail": "開催状況を確認",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sat_70",
+      "weekType": "fighter_shooter_normal",
+      "day": "sat",
+      "title": "シールド貼付",
+      "detail": "19時までに貼付済みを確認",
+      "category": "個人",
+      "time": "18:45",
+      "items": [
+        "シールド"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sat_71",
+      "weekType": "fighter_shooter_normal",
+      "day": "sat",
+      "title": "エンパイアウォー",
+      "detail": "19時開始。巣窟・シールドを事前確認",
+      "category": "ギルド",
+      "time": "19:00",
+      "items": [
+        "巣窟物資補給",
+        "シールド"
+      ],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sun_72",
+      "weekType": "fighter_shooter_normal",
+      "day": "sun",
+      "title": "ダイヤ使用",
+      "detail": "使用量と目的を確認",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "ダイヤ"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sun_73",
+      "weekType": "fighter_shooter_normal",
+      "day": "sun",
+      "title": "チップ・キューブ関連獲得",
+      "detail": "獲得タイミングを調整",
+      "category": "個人",
+      "time": null,
+      "items": [
+        "チップ",
+        "キューブ"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sun_74",
+      "weekType": "fighter_shooter_normal",
+      "day": "sun",
+      "title": "アルティメット周回",
+      "detail": "周回・報酬を確認",
+      "category": "個人",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sun_75",
+      "weekType": "fighter_shooter_normal",
+      "day": "sun",
+      "title": "攻勢作戦",
+      "detail": "開催状況を確認",
+      "category": "ギルド",
+      "time": null,
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sun_76",
+      "weekType": "fighter_shooter_normal",
+      "day": "sun",
+      "title": "エンパイアウォー",
+      "detail": "19時までの開催予定を確認",
+      "category": "ギルド",
+      "time": "19:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sun_77",
+      "weekType": "fighter_shooter_normal",
+      "day": "sun",
+      "title": "ギャザー祭り",
+      "detail": "ギャザー参加",
+      "category": "ギルド",
+      "time": "21:45",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sun_78",
+      "weekType": "fighter_shooter_normal",
+      "day": "sun",
+      "title": "スピーカートラップ",
+      "detail": "ギルドイベント",
+      "category": "ギルド",
+      "time": "22:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_extra_79",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "ギルド資源の解体・再採集準備",
+      "detail": "残量を確認。必要に応じて解体し、再入場の準備をする",
+      "category": "ギルド",
+      "time": "08:50",
+      "items": [],
+      "lionOverlap": false,
+      "guild": true,
+      "personal": false,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_extra_80",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "「今すぐ採集」の再使用",
+      "detail": "再使用できる状態か確認して使用する",
+      "category": "個人",
+      "time": "08:55",
+      "items": [],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_extra_81",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "採集部隊の帰還確認",
+      "detail": "9時前に帰還させ、再採集のタイミングを合わせる",
+      "category": "個人",
+      "time": "09:00",
+      "items": [],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_extra_82",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "獅子奮迅17時帯の開始前確認",
+      "detail": "訓練ブーストを使う場合は対象お題を確認",
+      "category": "個人",
+      "time": "16:55",
+      "items": [
+        "訓練ブースト"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_extra_83",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "獅子奮迅17時帯の開始前確認",
+      "detail": "器官強化・刑務所などの対象お題を確認",
+      "category": "個人",
+      "time": "16:55",
+      "items": [
+        "器官強化ルーン"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_extra_84",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "器官強化・刑務所の実施判断",
+      "detail": "17時帯の獅子被りを優先的に確認",
+      "category": "個人",
+      "time": "17:00",
+      "items": [
+        "器官強化ルーン"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_extra_85",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "獅子奮迅17時帯の開始前確認",
+      "detail": "器官強化・刑務所などの対象お題を確認",
+      "category": "個人",
+      "time": "16:55",
+      "items": [
+        "器官強化ルーン"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_extra_86",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "器官強化・刑務所の実施判断",
+      "detail": "17時帯の獅子被りを優先的に確認",
+      "category": "個人",
+      "time": "17:00",
+      "items": [
+        "器官強化ルーン"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_extra_87",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "獅子奮迅9時帯の開始・獲得開始",
+      "detail": "装備・モジュール・チップ・キューブ・ナノウェポン素材は可能なら9時以降に獲得",
+      "category": "個人",
+      "time": "09:00",
+      "items": [
+        "装備材料",
+        "モジュール",
+        "チップ",
+        "キューブ",
+        "ナノウェポン素材"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sat_extra_88",
+      "weekType": "fighter_shooter_normal",
+      "day": "sat",
+      "title": "獅子奮迅9時帯の開始・ダイヤ使用判断",
+      "detail": "獅子奮迅のお題を確認してからダイヤ使用を判断",
+      "category": "個人",
+      "time": "09:00",
+      "items": [
+        "ダイヤ"
+      ],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sat_extra_89",
+      "weekType": "fighter_shooter_normal",
+      "day": "sat",
+      "title": "シールド最終確認",
+      "detail": "19時開始前にシールド貼付済みか確認",
+      "category": "個人",
+      "time": "18:45",
+      "items": [
+        "シールド"
+      ],
+      "lionOverlap": false,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_thu_extra_90",
+      "weekType": "ace_commander",
+      "day": "thu",
+      "title": "翌1時帯の獅子奮迅開始前確認",
+      "detail": "深夜帯を狙う場合は対象お題と実施可能性を確認",
+      "category": "個人",
+      "time": "00:55",
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_fri_extra_91",
+      "weekType": "ace_commander",
+      "day": "fri",
+      "title": "翌1時帯の獅子奮迅開始前確認",
+      "detail": "深夜帯を狙う場合は対象お題と実施可能性を確認",
+      "category": "個人",
+      "time": "00:55",
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "ace_commander_sat_extra_92",
+      "weekType": "ace_commander",
+      "day": "sat",
+      "title": "翌1時帯の獅子奮迅開始前確認",
+      "detail": "深夜帯を狙う場合は対象お題と実施可能性を確認",
+      "category": "個人",
+      "time": "00:55",
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_thu_extra_93",
+      "weekType": "fighter_shooter_normal",
+      "day": "thu",
+      "title": "翌1時帯の獅子奮迅開始前確認",
+      "detail": "深夜帯を狙う場合は対象お題と実施可能性を確認",
+      "category": "個人",
+      "time": "00:55",
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_fri_extra_94",
+      "weekType": "fighter_shooter_normal",
+      "day": "fri",
+      "title": "翌1時帯の獅子奮迅開始前確認",
+      "detail": "深夜帯を狙う場合は対象お題と実施可能性を確認",
+      "category": "個人",
+      "time": "00:55",
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    },
+    {
+      "id": "fighter_shooter_normal_sat_extra_95",
+      "weekType": "fighter_shooter_normal",
+      "day": "sat",
+      "title": "翌1時帯の獅子奮迅開始前確認",
+      "detail": "深夜帯を狙う場合は対象お題と実施可能性を確認",
+      "category": "個人",
+      "time": "00:55",
+      "items": [],
+      "lionOverlap": true,
+      "guild": false,
+      "personal": true,
+      "note": ""
+    }
+  ]
+}

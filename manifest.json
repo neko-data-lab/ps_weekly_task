@@ -1,0 +1,10 @@
+{
+  "name": "パズサバ週間イベント確認",
+  "short_name": "パズサバ予定",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#101827",
+  "theme_color": "#172033",
+  "lang": "ja",
+  "description": "パズル&サバイバルの週間イベント・タスク確認ツール"
+}
