@@ -8,12 +8,12 @@
 <body>
 <header class="topbar"><div><div class="eyebrow">PUZZLE & SURVIVAL</div><h1>週間イベント確認</h1></div><button class="iconbtn hamburger" id="menuBtn" aria-label="メニューを開く">☰</button></header>
 <main>
-<section class="hero card"><div class="hero-row"><span class="eyebrow">今日の予定</span><span id="todayDate" class="date"></span></div><h2 id="todayLabel">今日</h2><!--<div class="week-auto-label">週タイプは日付から自動切替</div>--><div class="hero-stats"><div><b id="todoCount">0</b><small>未完了</small></div><div><b id="eventCount">0</b><small>時間指定</small></div><div><b id="overlapCount">0</b><small>獅子被り候補</small></div></div></section>
+<section class="hero card"><div class="hero-row"><span class="eyebrow">今日の予定</span><span id="todayDate" class="date"></span></div><h2 id="todayLabel">今日</h2><div id="weekTypeBanner" class="week-type-banner" aria-live="polite"></div><div id="lionTodayStatus" class="lion-status"></div><div class="hero-stats"><div><b id="todoCount">0</b><small>未完了</small></div><div><b id="eventCount">0</b><small>時間指定</small></div><div><b id="overlapCount">0</b><small>獅子被り候補</small></div></div></section>
 <section class="section"><div class="section-head"><h2>次のイベント</h2><span class="muted" id="nextEventHint"></span></div><div id="nextEvent" class="next-event card"></div></section>
 <section class="section"><div class="section-head"><h2>今日のタスク</h2><button class="textbtn" id="todayAllBtn">今日を表示</button></div><div id="todayTasks"></div></section>
 <section class="section"><div class="section-head"><h2>週間カレンダー</h2><span class="muted">日付をタップ</span></div><div id="weekGrid" class="week-grid"></div></section>
 <section class="section"><div class="section-head"><h2>今日の時間軸</h2><span class="muted">時刻順</span></div><div id="timeline"></div></section>
-<section class="section"><div class="section-head"><h2>獅子奮迅の時間帯</h2><span class="muted">木〜土の被り候補</span></div><div id="lionBands" class="lion-grid"></div><p class="footnote">※獅子奮迅のお題はランダムです。表示は重複の可能性を示すもので、確定情報ではありません。</p></section>
+<section class="section"><div class="section-head"><h2>獅子奮迅の時間帯</h2><span class="muted">木・金・土のみ開催</span></div><div id="lionScheduleStatus" class="lion-schedule-status"></div><div id="lionBands" class="lion-grid"></div><p class="footnote">※獅子奮迅のお題はランダムです。表示は重複の可能性を示すもので、確定情報ではありません。</p></section>
 <section class="section"><div class="section-head"><h2>使用アイテム</h2><button class="textbtn" id="itemsBtn">所持数を管理</button></div><div id="itemSummary" class="card"></div></section>
 
 </main>
