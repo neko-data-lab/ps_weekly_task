@@ -20,7 +20,7 @@ function currentWeek(date=selectedDate){const anchor=Date.UTC(2026,10,9),target=
 function renderWeekTypeBanner(){
  const ace=currentWeek()==="ace_commander";
  const label=ace?"今週はエースコマンダー":"今週は通常週";
- const file=ace?"img1.jpg":"img2.jgg";
+ const file=ace?"img1.jpg":"img2.jpg";
  const alt=ace?"エースコマンダー週の画像":"通常週の画像";
  $("#weekTypeBanner").innerHTML=`<div class="week-type-title">${label}</div><a class="week-type-image-link" href="${file}" target="_blank" rel="noopener" aria-label="${alt}を拡大表示"><img src="${file}" alt="${alt}" onerror="this.closest('.week-type-image-link').classList.add('image-missing');this.style.display='none'"><span class="image-missing-text">画像を表示できません。${file}を同じフォルダに配置してください。</span></a>`;
 }
