@@ -24,7 +24,17 @@ function renderWeekTypeBanner(){
  const alt=ace?"エースコマンダー週の画像":"通常週の画像";
  $("#weekTypeBanner").innerHTML=`<div class="week-type-title">${label}</div><a class="week-type-image-link" href="${file}" target="_blank" rel="noopener" aria-label="${alt}を拡大表示"><img src="${file}" alt="${alt}" onerror="this.closest('.week-type-image-link').classList.add('image-missing');this.style.display='none'"><span class="image-missing-text">画像を表示できません。${file}を同じフォルダに配置してください。</span></a>`;
 }
-function tasksFor(d,w=currentWeek()){return data.tasks.filter(t=>t.weekType===w&&t.day===d)}
+function tasksFor(d,w=currentWeek()){
+ let list=data.tasks.filter(t=>t.weekType===w&&t.day===d);
+ if(w==="ace_commander"&&["mon","tue","wed"].includes(d)){
+  const override=data.weekOverrides?.[weekKey(selectedDate)];
+  const event=override?.aceCommanderEvent||defaultAceEvent(weekStart(selectedDate));
+  if(event) list.unshift({id:`ace_event_${d}`,weekType:w,day:d,title:event,detail:"週別イベント設定",category:"ギルド",time:null,items:[],lionOverlap:false,guild:true,personal:false,note:"",isWeeklyEvent:true});
+ }
+ return list;
+}
+function defaultAceEvent(start){const anchor=new Date(2026,10,9);const weeks=Math.round((weekStart(start)-weekStart(anchor))/604800000);return ((weeks%2)+2)%2===0?"蛍火の試練":"拾い屋拠点";}
+
 function stateFor(t,d){return getStatus()[`${weekKey(selectedDate)}|${currentWeek()}|${d}|${t.id}`]||""}
 function setTaskState(t,d,state){let s=getStatus(),k=`${weekKey(selectedDate)}|${currentWeek()}|${d}|${t.id}`;if(state)s[k]=state;else delete s[k];setStatus(s);renderAll()}
 function showToast(msg){let e=$("#toast");e.textContent=msg;e.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>e.classList.remove("show"),2100)}
@@ -42,7 +52,7 @@ function renderItems(){let names=[...new Set(data.tasks.filter(t=>t.weekType===c
 window.saveItem=(n,k,v)=>{let x=JSON.parse(localStorage.getItem(STORE.items)||"{}");x[n]=x[n]||{};x[n][k]=v===""?null:Number(v);localStorage.setItem(STORE.items,JSON.stringify(x));showToast("所持数を保存しました")};
 function renderAll(){renderToday();renderWeek();renderTimeline();renderLion();renderItems()}
 
-function openMenu(){const html=`<div class="menu-list"><button onclick="window.menuView('home')">⌂ ホーム</button><button onclick="window.menuView('week')">▦ 週間カレンダー</button><button onclick="window.menuView('day')">☑ 日別タスク</button><button onclick="window.menuView('timeline')">⏰ 時間軸</button><button onclick="window.menuView('lion')">⚔️ 獅子奮迅</button><button onclick="window.menuView('items')">🎒 アイテム確認</button><a href="help.html">📖 使い方</a><!--<a href="admin.html">🛠 スケジュール管理・編集</a>--><button onclick="window.resetCurrentWeek()">↻ 選択週のチェック状態をリセット</button></div><p class="footnote">週タイプは日付から自動判定されます。手動切り替えはありません。</p>`;showModal("メニュー",html)}
+function openMenu(){const html=`<div class="menu-list"><button onclick="window.menuView('home')">⌂ ホーム</button><button onclick="window.menuView('week')">▦ 週間カレンダー</button><button onclick="window.menuView('day')">☑ 日別タスク</button><button onclick="window.menuView('timeline')">⏰ 時間軸</button><button onclick="window.menuView('lion')">⚔️ 獅子奮迅</button><button onclick="window.menuView('items')">🎒 アイテム確認</button><a href="help.html">📖 使い方</a><a href="admin.html">🛠 スケジュール管理・編集</a><button onclick="window.resetCurrentWeek()">↻ 選択週のチェック状態をリセット</button></div><p class="footnote">週タイプは日付から自動判定されます。手動切り替えはありません。</p>`;showModal("メニュー",html)}
 window.resetCurrentWeek=()=>{if(confirm("選択中の日付が属する週のチェック状態をリセットしますか？")){let s=getStatus(),prefix=`${weekKey(selectedDate)}|${currentWeek()}|`;Object.keys(s).forEach(k=>{if(k.startsWith(prefix))delete s[k]});setStatus(s);renderAll();showToast("チェック状態をリセットしました")}};
 window.menuView=v=>{document.querySelector("#detailModal").classList.add("hidden");if(v==="home"){selectedDate=gameDateNow();renderAll();window.scrollTo({top:0,behavior:"smooth"})}else openView(v)};
 

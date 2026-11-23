@@ -1,6 +1,13 @@
 let data;const $=s=>document.querySelector(s);const KEY="psw_schedule_override_v1";
 async function load(){try{let raw=localStorage.getItem(KEY);if(raw)data=JSON.parse(raw);else{let r=await fetch("schedule.json");data=await r.json()}}catch(e){alert("schedule.jsonを読み込めません。GitHub Pages上で開いてください。");return}
-$("#week").innerHTML=data.weekTypes.map(x=>`<option value="${x.id}">${x.name}</option>`).join("");$("#day").innerHTML=data.days.map(x=>`<option value="${x.id}">${x.label}</option>`).join("");$("#week").onchange=render;$("#day").onchange=render;$("#save").onclick=save;$("#clear").onclick=clearForm;$("#export").onclick=exportJSON;$("#import").onchange=importJSON;$("#reset").onclick=reset;render()}
+$("#week").innerHTML=data.weekTypes.map(x=>`<option value="${x.id}">${x.name}</option>`).join("");$("#day").innerHTML=data.days.map(x=>`<option value="${x.id}">${x.label}</option>`).join("");$("#week").onchange=render;$("#day").onchange=render;$("#save").onclick=save;$("#clear").onclick=clearForm;$("#export").onclick=exportJSON;$("#import").onchange=importJSON;$("#reset").onclick=reset;render();initWeekEventEditor()}
+function initWeekEventEditor(){
+ const input=$("#eventWeek");const today=new Date();today.setHours(12,0,0,0);today.setDate(today.getDate()-((today.getDay()+6)%7));input.value=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
+ input.onchange=loadEventValue;$("#eventSave").onclick=saveWeekEvent;$("#eventClear").onclick=clearWeekEvent;loadEventValue();
+}
+function loadEventValue(){const key=$("#eventWeek").value;$("#eventName").value=data.weekOverrides?.[key]?.aceCommanderEvent||"";$("#eventStatus").textContent=$("#eventName").value?"この週は個別設定されています":"自動設定（交互開催）"}
+function saveWeekEvent(){const key=$("#eventWeek").value,name=$("#eventName").value.trim();if(!key||!name){alert("対象週とイベント名を入力してください");return}data.weekOverrides=data.weekOverrides||{};data.weekOverrides[key]={aceCommanderEvent:name};persist();loadEventValue();alert("週別イベントを保存しました。公開する場合はJSONを書き出してください")}
+function clearWeekEvent(){const key=$("#eventWeek").value;if(data.weekOverrides?.[key]){delete data.weekOverrides[key];persist()}$("#eventName").value="";loadEventValue();alert("個別設定を削除し、自動設定に戻しました")}
 function filtered(){return data.tasks.filter(t=>t.weekType===$("#week").value&&t.day===$("#day").value)}
 function render(){$("#list").innerHTML=filtered().map(t=>`<div class="admin-task"><div><b>${esc(t.title)}</b><small>${t.time||"時刻指定なし"} · ${t.category}${t.lionOverlap?" · 獅子被り":""}</small></div><div><button onclick="edit('${t.id}')">編集</button> <button onclick="del('${t.id}')">削除</button></div></div>`).join("")||'<div class="empty">登録タスクなし</div>'}
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -10,6 +17,6 @@ function save(){let title=$("#title").value.trim();if(!title){alert("タスク�
 function clearForm(){["id","title","detail","time","items"].forEach(x=>$("#"+x).value="");$("#category").value="個人";$("#lion").checked=false;$("#formTitle").textContent="タスク追加"}
 function persist(){localStorage.setItem(KEY,JSON.stringify(data));}
 function exportJSON(){let blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="schedule.json";a.click();URL.revokeObjectURL(a.href)}
-function importJSON(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!Array.isArray(x.tasks)||!Array.isArray(x.weekTypes))throw Error();data=x;persist();render();alert("JSONを読み込みました")}catch(err){alert("JSON形式またはデータ構造を確認してください")}};r.readAsText(f);e.target.value=""}
+function importJSON(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!Array.isArray(x.tasks)||!Array.isArray(x.weekTypes))throw Error();data=x;persist();render();loadEventValue();alert("JSONを読み込みました")}catch(err){alert("JSON形式またはデータ構造を確認してください")}};r.readAsText(f);e.target.value=""}
 function reset(){if(confirm("この端末の編集内容を破棄し、公開中のschedule.jsonを再読み込みしますか？")){localStorage.removeItem(KEY);location.reload()}}
 load();

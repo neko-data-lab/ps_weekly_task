@@ -133,20 +133,6 @@
       "note": ""
     },
     {
-      "id": "ace_commander_tue_6",
-      "weekType": "ace_commander",
-      "day": "mon",
-      "title": "拾い屋拠点",
-      "detail": "開催状況を確認して参加",
-      "category": "ギルド",
-      "time": null,
-      "items": [],
-      "lionOverlap": false,
-      "guild": true,
-      "personal": false,
-      "note": ""
-    },
-    {
       "id": "ace_commander_tue_7",
       "weekType": "ace_commander",
       "day": "tue",
@@ -230,20 +216,6 @@
       "lionOverlap": false,
       "guild": false,
       "personal": true,
-      "note": ""
-    },
-    {
-      "id": "ace_commander_wed_13",
-      "weekType": "ace_commander",
-      "day": "wed",
-      "title": "拾い屋拠点",
-      "detail": "開催状況を確認して参加",
-      "category": "ギルド",
-      "time": null,
-      "items": [],
-      "lionOverlap": false,
-      "guild": true,
-      "personal": false,
       "note": ""
     },
     {
@@ -1478,5 +1450,16 @@
       "personal": true,
       "note": ""
     }
-  ]
+  ],
+  "weekOverrides": {
+    "2026-11-23": {
+      "aceCommanderEvent": "拾い屋拠点"
+    },
+    "2026-12-07": {
+      "aceCommanderEvent": "蛍火の試練"
+    },
+    "2026-12-21": {
+      "aceCommanderEvent": "拾い屋拠点"
+    }
+  }
 }
