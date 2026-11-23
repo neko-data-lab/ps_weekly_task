@@ -102,20 +102,6 @@
       "note": ""
     },
     {
-      "id": "ace_commander_mon_3",
-      "weekType": "ace_commander",
-      "day": "mon",
-      "title": "蛍火の試練",
-      "detail": "開催状況を確認して参加",
-      "category": "ギルド",
-      "time": null,
-      "items": [],
-      "lionOverlap": false,
-      "guild": true,
-      "personal": false,
-      "note": ""
-    },
-    {
       "id": "ace_commander_mon_4",
       "weekType": "ace_commander",
       "day": "mon",
